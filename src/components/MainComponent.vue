@@ -1,17 +1,19 @@
 <template>
     <main>
-        
+        <CardList />
     </main>
 </template>
 
 <script>
-    export default {
-        name: 'MainComponent'
-    }
+import CardList from './CardList.vue';
+export default {
+    name: 'MainComponent',
+    components: { CardList }
+}
 </script>
 
 <style lang="scss" scoped>
-main{
+main {
     height: calc(100vh - 50px);
 }
 </style>
